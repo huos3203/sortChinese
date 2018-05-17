@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05ED6DBD20AD22DC00E08E7E /* ShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ED6DBA20AD22DC00E08E7E /* ShopModel.m */; };
+		05ED6DBE20AD22DC00E08E7E /* NSArray+SortChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ED6DBC20AD22DC00E08E7E /* NSArray+SortChinese.m */; };
 		A91939EB15CB8EEA001C48CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91939EA15CB8EEA001C48CE /* Foundation.framework */; };
 		A91939EE15CB8EEA001C48CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A91939ED15CB8EEA001C48CE /* main.m */; };
-		A91939F215CB8EEA001C48CE /* ChineseSort.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A91939F115CB8EEA001C48CE /* ChineseSort.1 */; };
+		A91939FA15CB8F1D001C48CE /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = A91939F915CB8F1D001C48CE /* ChineseString.m */; };
+		A9193A0515CB916E001C48CE /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = A9193A0415CB916E001C48CE /* pinyin.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,18 +22,24 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				A91939F215CB8EEA001C48CE /* ChineseSort.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05ED6DB920AD22DC00E08E7E /* ShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopModel.h; sourceTree = "<group>"; };
+		05ED6DBA20AD22DC00E08E7E /* ShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopModel.m; sourceTree = "<group>"; };
+		05ED6DBB20AD22DC00E08E7E /* NSArray+SortChinese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SortChinese.h"; sourceTree = "<group>"; };
+		05ED6DBC20AD22DC00E08E7E /* NSArray+SortChinese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SortChinese.m"; sourceTree = "<group>"; };
 		A91939E615CB8EEA001C48CE /* ChineseSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChineseSort; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91939EA15CB8EEA001C48CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A91939ED15CB8EEA001C48CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A91939F015CB8EEA001C48CE /* ChineseSort-Prefix.pch */ = {isa = PBXFileReference; path = "ChineseSort-Prefix.pch"; sourceTree = "<group>"; };
-		A91939F115CB8EEA001C48CE /* ChineseSort.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ChineseSort.1; sourceTree = "<group>"; };
+		A91939F015CB8EEA001C48CE /* ChineseSort-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChineseSort-Prefix.pch"; sourceTree = "<group>"; };
+		A91939F815CB8F1D001C48CE /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
+		A91939F915CB8F1D001C48CE /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
+		A9193A0315CB916E001C48CE /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		A9193A0415CB916E001C48CE /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05ED6DB720AD22DC00E08E7E /* sort2 */ = {
+			isa = PBXGroup;
+			children = (
+				05ED6DB820AD22DC00E08E7E /* Model */,
+				05ED6DBB20AD22DC00E08E7E /* NSArray+SortChinese.h */,
+				05ED6DBC20AD22DC00E08E7E /* NSArray+SortChinese.m */,
+			);
+			path = sort2;
+			sourceTree = "<group>";
+		};
+		05ED6DB820AD22DC00E08E7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05ED6DB920AD22DC00E08E7E /* ShopModel.h */,
+				05ED6DBA20AD22DC00E08E7E /* ShopModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A91939DB15CB8EEA001C48CE = {
 			isa = PBXGroup;
 			children = (
@@ -73,19 +101,15 @@
 		A91939EC15CB8EEA001C48CE /* ChineseSort */ = {
 			isa = PBXGroup;
 			children = (
+				05ED6DB720AD22DC00E08E7E /* sort2 */,
+				A9193A0315CB916E001C48CE /* pinyin.h */,
+				A9193A0415CB916E001C48CE /* pinyin.c */,
+				A91939F815CB8F1D001C48CE /* ChineseString.h */,
+				A91939F915CB8F1D001C48CE /* ChineseString.m */,
 				A91939ED15CB8EEA001C48CE /* main.m */,
-				A91939F115CB8EEA001C48CE /* ChineseSort.1 */,
-				A91939EF15CB8EEA001C48CE /* Supporting Files */,
-			);
-			path = ChineseSort;
-			sourceTree = "<group>";
-		};
-		A91939EF15CB8EEA001C48CE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
 				A91939F015CB8EEA001C48CE /* ChineseSort-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			path = ChineseSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91939EE15CB8EEA001C48CE /* main.m in Sources */,
+				05ED6DBE20AD22DC00E08E7E /* NSArray+SortChinese.m in Sources */,
+				A91939FA15CB8F1D001C48CE /* ChineseString.m in Sources */,
+				05ED6DBD20AD22DC00E08E7E /* ShopModel.m in Sources */,
+				A9193A0515CB916E001C48CE /* pinyin.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +257,7 @@
 				A91939F715CB8EEA001C48CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
